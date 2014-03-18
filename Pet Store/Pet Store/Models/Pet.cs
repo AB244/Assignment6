@@ -15,6 +15,7 @@ namespace Pet_Store.Models
         public DateTime Date_Recieved { get; set; }
         public string Quantity { get; set; }
         public decimal Price { get; set; }
+        public string ImgPath { get; set; }
     }
 
     public class PetDBContext : DbContext
