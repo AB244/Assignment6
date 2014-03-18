@@ -10,11 +10,18 @@ namespace Pet_Store.Models
     public class Pet
     {
         [Key]
+        
         public string Name { get; set; }
         public string Description { get; set; }
+        [DataType(DataType.Date)]
+        [DisplayFormat(DataFormatString = "{0:yyyy-MM-dd}", ApplyFormatInEditMode = true)]
         public DateTime Date_Recieved { get; set; }
-        public string Quantity { get; set; }
+        [Range(0, 99999)]
+        public int Quantity { get; set; }
+        [DataType(DataType.Currency)]
+    [Range(0,9999999)]
         public decimal Price { get; set; }
+        [DataType(DataType.ImageUrl)]
         public string ImgPath { get; set; }
     }
 

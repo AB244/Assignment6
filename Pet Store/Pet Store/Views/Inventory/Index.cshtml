@@ -4,7 +4,7 @@
     ViewBag.Title = "Pet Inventory";
 }
 
-<h2>Index</h2>
+<h2>Pet Inventory</h2>
 
 <table class="table">
     <tr>
@@ -22,9 +22,6 @@
         </th>
         <th>
             @Html.DisplayNameFor(model => model.Price)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.ImgPath)
         </th>
         <th></th>
     </tr>
@@ -45,9 +42,6 @@
         </td>
         <td>
             @Html.DisplayFor(modelItem => item.Price)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.ImgPath)
         </td>
         <td>
             @Html.ActionLink("Details", "Details", new { id=item.Name }) 
