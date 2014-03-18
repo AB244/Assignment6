@@ -10,8 +10,9 @@ namespace Pet_Store.Models
     public class Pet
     {
         [Key]
-        
+        [Required]
         public string Name { get; set; }
+        [Required]
         public string Description { get; set; }
         [DataType(DataType.Date)]
         [DisplayFormat(DataFormatString = "{0:yyyy-MM-dd}", ApplyFormatInEditMode = true)]
