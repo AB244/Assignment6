@@ -26,5 +26,19 @@ namespace Pet_Store.Controllers
 
             return View();
         }
+
+        public ActionResult Manage()
+        {
+            ViewBag.Message = "Pet Management Control";
+
+            return View();
+        }
+
+        public ActionResult Inventory()
+        {
+            ViewBag.Message = "Shop Inventory";
+
+            return View();
+        }
     }
 }
