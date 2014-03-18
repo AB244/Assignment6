@@ -228,10 +228,7 @@
     <Content Include="Views\Shared\_LoginPartial.cshtml" />
     <Content Include="Views\Home\Manage.cshtml" />
     <Content Include="Views\Home\Inventory.cshtml" />
-    <Content Include="Views\Inventory\Create.cshtml" />
-    <Content Include="Views\Inventory\Delete.cshtml" />
     <Content Include="Views\Inventory\Details.cshtml" />
-    <Content Include="Views\Inventory\Edit.cshtml" />
     <Content Include="Views\Inventory\Index.cshtml" />
     <Content Include="Views\Manage\Create.cshtml" />
     <Content Include="Views\Manage\Delete.cshtml" />
