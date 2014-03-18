@@ -35,7 +35,7 @@
 @foreach (var item in Model) {
     <tr>
         <td>
-            <img src=@Html.DisplayFor(modelItem => item.ImgPath) />
+            <img src=@Html.DisplayFor(modelItem => item.ImgPath) width="200" height="200" />
         </td>
         <td>
             @Html.DisplayFor(modelItem => item.Description)
