@@ -4931,9 +4931,15 @@ a.list-group-item.active > .badge,
     margin: auto;
     border:5px solid blue;
 }
-#Underline {
+.MainABOUTTitle {
 
     text-decoration: underline;
+
+}
+
+.SubABOUTTitle{
+    text-decoration: underline;
+    font-style:italic
 
 }
 .jumbotron {
