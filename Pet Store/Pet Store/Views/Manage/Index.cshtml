@@ -4,7 +4,7 @@
     ViewBag.Title = "Manage";
 }
 
-<h2>Manage</h2>
+<h2>Manage Pets</h2>
 
 <p>
     @Html.ActionLink("Create New", "Create")
@@ -12,7 +12,7 @@
 <table class="table">
     <tr>
         <th>
-            Image
+            @Html.DisplayNameFor(model => model.Name)
         </th>
         <th>
             @Html.DisplayNameFor(model => model.Description)
@@ -35,7 +35,7 @@
 @foreach (var item in Model) {
     <tr>
         <td>
-            <img src=@Html.DisplayFor(modelItem => item.ImgPath) width="200" height="200" />
+            @Html.DisplayFor(modelItem => item.Name)
         </td>
         <td>
             @Html.DisplayFor(modelItem => item.Description)
@@ -53,9 +53,9 @@
             @Html.DisplayFor(modelItem => item.ImgPath)
         </td>
         <td>
-            @Html.ActionLink("Edit", "Edit", new { id=item.Name }) |
-            @Html.ActionLink("Details", "Details", new { id=item.Name }) |
-            @Html.ActionLink("Delete", "Delete", new { id=item.Name })
+            @Html.ActionLink("Edit", "Edit", new { id=item.id }) |
+            @Html.ActionLink("Details", "Details", new { id=item.id }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.id })
         </td>
     </tr>
 }

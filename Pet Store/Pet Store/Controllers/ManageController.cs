@@ -21,7 +21,7 @@ namespace Pet_Store.Controllers
         }
 
         // GET: /Manage/Details/5
-        public ActionResult Details(string id)
+        public ActionResult Details(int? id)
         {
             if (id == null)
             {
@@ -46,7 +46,7 @@ namespace Pet_Store.Controllers
         // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Create([Bind(Include="Name,Description,Date_Recieved,Quantity,Price,ImgPath")] Pet pet)
+        public ActionResult Create([Bind(Include="id,Name,Description,Date_Recieved,Quantity,Price,ImgPath")] Pet pet)
         {
             if (ModelState.IsValid)
             {
@@ -59,7 +59,7 @@ namespace Pet_Store.Controllers
         }
 
         // GET: /Manage/Edit/5
-        public ActionResult Edit(string id)
+        public ActionResult Edit(int? id)
         {
             if (id == null)
             {
@@ -78,7 +78,7 @@ namespace Pet_Store.Controllers
         // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Edit([Bind(Include="Name,Description,Date_Recieved,Quantity,Price,ImgPath")] Pet pet)
+        public ActionResult Edit([Bind(Include="id,Name,Description,Date_Recieved,Quantity,Price,ImgPath")] Pet pet)
         {
             if (ModelState.IsValid)
             {
@@ -90,7 +90,7 @@ namespace Pet_Store.Controllers
         }
 
         // GET: /Manage/Delete/5
-        public ActionResult Delete(string id)
+        public ActionResult Delete(int? id)
         {
             if (id == null)
             {
@@ -107,7 +107,7 @@ namespace Pet_Store.Controllers
         // POST: /Manage/Delete/5
         [HttpPost, ActionName("Delete")]
         [ValidateAntiForgeryToken]
-        public ActionResult DeleteConfirmed(string id)
+        public ActionResult DeleteConfirmed(int id)
         {
             Pet pet = db.Pets.Find(id);
             db.Pets.Remove(pet);

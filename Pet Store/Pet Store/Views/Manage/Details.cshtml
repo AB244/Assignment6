@@ -10,9 +10,15 @@
     <h4>Pet</h4>
 	<hr />
     <dl class="dl-horizontal">
+        <dd>
+            <img src=@Html.DisplayFor(model => model.ImgPath) width="200" height="200" ) />
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Name)
+        </dt>
 
         <dd>
-            <img src=@Html.DisplayFor(model => model.ImgPath) width="200" height="200")/>
+            @Html.DisplayFor(model => model.Name)
         </dd>
 
         <dt>
@@ -58,6 +64,6 @@
     </dl>
 </div>
 <p>
-    @Html.ActionLink("Edit", "Edit", new { id = Model.Name }) |
+    @Html.ActionLink("Edit", "Edit", new { id = Model.id }) |
     @Html.ActionLink("Back to List", "Index")
 </p>

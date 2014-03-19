@@ -21,7 +21,7 @@ namespace Pet_Store.Controllers
         }
 
         // GET: /Inventory/Details/5
-        public ActionResult Details(string id)
+        public ActionResult Details(int? id)
         {
             if (id == null)
             {

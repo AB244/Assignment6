@@ -9,7 +9,7 @@ namespace Pet_Store.Migrations
     {
         public Configuration()
         {
-            AutomaticMigrationsEnabled = false;
+            AutomaticMigrationsEnabled = true;
         }
 
         protected override void Seed(Pet_Store.Models.PetDBContext context)

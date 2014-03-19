@@ -10,6 +10,7 @@ namespace Pet_Store.Models
     public class Pet
     {
         [Key]
+        public int id { get; set; }
         [Required]
         public string Name { get; set; }
         [Required]
