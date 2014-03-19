@@ -22,7 +22,7 @@ namespace Pet_Store.Controllers
 
         public ActionResult Contact()
         {
-            ViewBag.Message = "Your contact page.";
+            ViewBag.Message = "Please Contact VIA one of the following:";
 
             return View();
         }
