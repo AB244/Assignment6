@@ -15,7 +15,7 @@ namespace Pet_Store.Controllers
 
         public ActionResult About()
         {
-            ViewBag.Message = "Your application description page.";
+            ViewBag.Message = "The following websites are cited:";
 
             return View();
         }

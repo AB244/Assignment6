@@ -4927,6 +4927,15 @@ a.list-group-item.active > .badge,
   margin-left: 3px;
 }
 
+#MainIMG {
+    margin: auto;
+    border:5px solid blue;
+}
+#Underline {
+
+    text-decoration: underline;
+
+}
 .jumbotron {
   padding: 30px;
   margin-bottom: 30px;
